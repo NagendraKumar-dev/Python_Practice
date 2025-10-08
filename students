@@ -1,0 +1,19 @@
+students = {
+    "Ravi": 85,
+    "Anita": 90,
+    "Suresh": 78,
+    "Meena": 92,
+    "Arjun": 88
+}
+def calculate_stats(students):
+    marks = list(students.values())
+    avg = sum(marks) / len(marks)
+    high = max(marks)
+    low = min(marks)
+    return avg, high, low
+
+average, highest, lowest = calculate_stats(students)
+print("📊 Student Marks Summary:")
+print("Average Marks:", average)
+print("Highest Marks:", highest)
+print("Lowest Marks:", lowest)
